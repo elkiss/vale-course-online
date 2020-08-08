@@ -19,14 +19,33 @@ export default ({ data }) => {
             <Logo className={classes.logo} aria-label={siteMetadata.title} />
 
             <section>
-                <h1 className={classes.subtitle}> INSERT CATCHY TAG LINE HERE </h1>
+                <h1 className={classes.subtitle}>A free, interactive course by Joseph Kato</h1>
                 <div className={classes.introduction}>
                 <p>
-                    This is a good place to write what your course is about!  Dinosaurs? Neural Networks? LSTM? How to do taxes and not get bored? Write it here!   
+                    Hi there! Welcome to <i>Advanced Prose Linting With Vale And Vale Server</i>.
+                    In this course, you'll learn absolutely everything there is to know about Vale
+                    and Vale Server&mdash;from the basics of installation and usage to the most
+                    advanced aspects of style creation and configuration.
+                </p>
+                <p>
+                    Upon completion of the course, you'll have implemeted a complete, real-world
+                    linting pipeline that enforces correct spelling, style, and grammar
+                    according to your own in-house style guide and markup language (Markdown,
+                    AsciiDoc, reStructuredText, or DITA). It'll combine a remote CI service with
+                    local text editor usage (VS Code, Atom, or Sublime Text) to ensure that your
+                    content is consistent, on-brand, and mistake-free across all of your platforms
+                    and writers.
+                </p>
+                <p>
+                    Let's get started!
+                </p>
+                <p>
+                    <b>Prerequisites</b>: basic familiarity with the command line (Terminal, Command
+                    Prompt, etc.).
                 </p>
                 </div>
             </section>
-            
+
             {chapters.map(({ slug, title, description }) => (
                 <section key={slug} className={classes.chapter}>
                     <h2 className={classes.chapterTitle}>
